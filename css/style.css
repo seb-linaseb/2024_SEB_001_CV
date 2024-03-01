@@ -1,0 +1,782 @@
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 400;
+    src:
+        url("../fonts/Montserrat-Regular.ttf") format('truetype'),
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 700;
+    src:
+        url("../fonts/Montserrat-Bold.ttf") format('truetype'),
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    src:
+        url("../fonts/Montserrat-Italic.ttf") format('truetype')
+}
+
+/* Container */
+/* 200 => 1200 */
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    min-width: 400px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: "Montserrat", 'Arial', 'sans-serif';
+}
+
+img {
+    height: 25px;
+    width: auto;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.name-title {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.dev-specialty {
+    display: block;
+}
+
+.separator-65 {
+    width: 65%;
+    margin: 12px auto;
+}
+
+.separator-90 {
+    width: 90%;
+    margin: 12px auto;
+}
+
+.job {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.photo-seb {
+    height: 150px;
+    margin: auto auto;
+    border-radius: 50%;
+}
+
+.contacts {
+    text-transform: none;
+    font-weight: bold;
+    padding: 10px;
+    width: 75%;
+    margin: auto;
+}
+
+.contacts-list {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.contact-item {
+    font-size: 16px;
+    height: 30px;
+    max-width: 400px;
+    text-align: left;
+    margin: auto;
+}
+
+.contact-item::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: black;
+}
+
+.contact-item-last::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.contact-logo {
+    margin-left: -33px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+.contact-info {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 30px;
+}
+
+.bio {
+    padding: 10px;
+}
+
+.bio p {
+    line-height: 1.5em;
+    text-align: justify;
+    padding: 10px;
+    font-style: italic;
+}
+
+.infos,
+.experience-formation {
+    background: #C2C3C5;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.experience-formation {
+    background: none;
+}
+
+.infos-title,
+.experiences-title,
+.formations-title {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.skills,
+.interests,
+.references {
+    text-transform: uppercase;
+    margin: 12px;
+    padding: 12px;
+}
+
+.interests-list {
+    font-size: 14px;
+    text-transform: none;
+}
+
+.graphs {
+    margin: 25px -25px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.graphs img {
+    width: 50%;
+    height: auto;
+}
+
+.language-name {
+    font-weight: 700;
+}
+
+.dev-details {
+    background: white;
+    border-radius: 25px;
+    margin: 12px;
+    padding: 0 10px 0 10px;
+}
+
+.dev-category {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.dev-name {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.progress {
+    margin: auto 0;
+    width: 50%;
+    height: 5px;
+    overflow: hidden;
+    background: #e5e5e5;
+}
+
+.bar {
+    position: relative;
+    float: left;
+    height: 100%;
+    background: #01BF63;
+}
+
+.language-icons {
+    padding: 1px 0 2.5px 5px;
+}
+
+.language-icons img {
+    padding: 0 2px;
+}
+
+.interests-list {
+    padding: 0 10%;
+    margin: auto;
+}
+
+.interest-tag,
+.experience-tasks-item {
+    list-style-type: disc;
+}
+
+.interest-title {
+    font-weight: 700;
+    padding: 5px;
+}
+
+.interest-item {
+    list-style-type: circle;
+    margin-left: 20px;
+    padding: 2px;
+}
+
+.references {
+    padding-bottom: 25px;
+}
+
+.ask-ref {
+    color: #01BF63;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: none;
+}
+
+.title-block {
+    padding: 10px;
+}
+
+.job-logo,
+.school-logo {
+    height: 30px;
+    display: block;
+    margin: 10px auto;
+}
+
+.experience,
+.formation {
+    margin: 25px 0;
+}
+
+.experience-dates,
+.formation-dates {
+    font-size: 14px;
+}
+
+.experience-job-name,
+.formation-diplome-name {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.experience-company {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.formation-company {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.experience-tasks,
+.experience-label {
+    margin: 5px 0;
+    line-height: 20px;
+}
+
+.experience-tasks-item {
+    margin-left: 20px;
+}
+
+.heihgt-30 {
+    height: 30px;
+}
+
+.experience-task-item-label {
+    line-height: 30px;
+    vertical-align: top;
+}
+
+.experience-project-label {
+    font-style: italic;
+}
+
+.no-bullet {
+    list-style-type: none;
+}
+
+.access {
+    margin-left: 30px;
+}
+
+.formation-dates {
+    font-weight: 700;
+}
+
+@media only screen and (width >= 1024px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .name-title {
+        width: 100%;
+        padding: 25px;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .separator-65 {
+        margin-left: 0;
+        width: 65%;
+    }
+
+    .separator-90 {
+        margin-left: 15px;
+    }
+
+    .job {
+        width: 70%;
+        line-height: 1.2em;
+    }
+
+    .contacts {
+        width: 55%;
+    }
+
+    .main {
+        display: flex;
+    }
+
+    .infos {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 0 25px 0 0;
+    }
+
+    .infos-block {
+        margin: 12px 25px;
+    }
+
+    .skills,
+    .interests,
+    .references {
+        margin: 0 50px;
+    }
+
+    .infos-title {
+        text-align: left;
+    }
+
+    .dev-details {
+        margin: 30px -40px;
+    }
+
+    .job-logo,
+    .school-logo {
+        margin: 0 15px;
+    }
+
+    .title-block {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .experience-formation {
+        width: 60%;
+    }
+
+    .ask-ref {
+        text-align: left;
+    }
+}
+
+
+    /*----------------------------------*/
+    /*          PRINT VERSION           */
+    /*----------------------------------*/
+
+    @media print {
+
+        html {
+            font-size: 9pt;
+        }
+    
+        .container {
+            width: 21cm;
+            height: 29cm;
+            margin: auto auto;
+        }
+
+        img {
+            height: 12pt;
+            width: auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .name {
+            padding-bottom: 3pt;
+        }
+
+        .name-title {
+            width: 100%;
+            font-size: 25pt;
+            font-weight: bold;
+            padding: 12.5pt;
+            padding-right: 0;
+            text-align: left;
+        }
+
+        .dev-specialty {
+            display: block;
+        }
+
+        .separator-65 {
+            width: 65%;
+            margin: 6pt auto 6pt 0;
+        }
+
+        .separator-90 {
+            width: 90%;
+            margin: 6pt auto 6pt 0;
+        }
+
+        .job {
+            width: 70%;
+            font-size: 20pt;
+            font-weight: 400;
+            line-height: 1.2em;
+            padding-top: 3pt;
+        }
+
+        .photo-seb {
+            height: 95pt;
+            margin: auto auto;
+            border-radius: 50%;
+        }
+
+        .contacts {
+            text-transform: none;
+            font-weight: bold;
+            width: 43%;
+            margin: auto;
+        }
+
+        .contacts-list {
+            display: block;
+            width: 80%;
+            margin: auto;
+        }
+
+        .contact-item {
+            font-size: 8pt;
+            height: 18pt;
+            max-width: 300pt;
+            text-align: left;
+            margin: auto;
+        }
+
+        .contact-item::before {
+            content: '';
+            display: inline-block;
+            width: 15pt;
+            height: 18pt;
+            background: black;
+        }
+
+        .contact-item-last::before {
+            content: '';
+            display: inline-block;
+            width: 15pt;
+            height: 18pt;
+            background: black;
+            border-bottom-left-radius: 7.5pt;
+            border-bottom-right-radius: 7.5pt;
+        }
+
+        .contact-logo {
+            margin-left: -16.5pt;
+            margin-bottom: 2.5pt;
+            margin-right: 7.5pt;
+        }
+
+        .contact-info {
+            display: inline-block;
+            vertical-align: top;
+            line-height: 18pt;
+        }
+
+        .bio {
+            padding: 5pt;
+        }
+
+        .bio p {
+            line-height: 1.5em;
+            text-align: justify;
+            padding: 5pt;
+            font-style: italic;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .infos,
+        .experience-formation {
+            background: #C2C3C5;
+            margin: 5pt;
+            border-radius: 0 12.5pt 0 0;
+        }
+
+        .infos {
+            width: 37%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .experience-formation {
+            width: 63%;
+            background: none;
+            padding-left: 12pt;
+        }
+
+        .infos-title,
+        .experiences-title,
+        .formations-title {
+            font-size: 15pt;
+            font-weight: bold;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        .infos-title {
+            width: 50%;
+        }
+
+        .skills,
+        .interests,
+        .references {
+            text-transform: uppercase;
+            margin: 0 25pt;
+            padding: 0 6pt;
+        }
+
+        .skills {
+            padding-top: 12pt;
+        }
+
+        .interests {
+            padding-top: 0;
+        }
+
+        .references {
+            padding: 12pt 6pt;
+        }
+
+        .interests-list {
+            font-size: 8pt;
+            text-transform: none;
+        }
+
+        .graphs {
+            margin: 12.5pt -12.5pt;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .graphs img {
+            width: 50%;
+            height: auto;
+        }
+
+        .language-name {
+            font-weight: 700;
+        }
+
+        .dev-details {
+            background: white;
+            border-radius: 12.5pt;
+            margin: 14pt -20pt;
+            padding: 0 5pt 0 5pt;
+        }
+
+        .dev-category {
+            display: flex;
+            justify-content: space-between;
+            padding: 2.5pt;
+        }
+
+        .dev-name {
+            font-size: 7pt;
+            font-weight: 700;
+        }
+
+        .progress {
+            margin: auto 0;
+            width: 50%;
+            height: 2.5pt;
+            overflow: hidden;
+            background: #e5e5e5;
+        }
+
+        .bar {
+            position: relative;
+            float: left;
+            height: 100%;
+            background: #01BF63;
+        }
+
+        .language-icons {
+            padding: 0.5pt 0 1.25pt 2.5pt;
+        }
+
+        .language-icons img {
+            padding: 0 1pt;
+        }
+
+        .interests-list {
+            padding: 0 10%;
+            margin: auto;
+        }
+
+        .interest-tag,
+        .experience-tasks-item {
+            list-style-type: disc;
+        }
+
+        .interest-title {
+            font-weight: 700;
+            padding: 2.5pt;
+        }
+
+        .interest-item {
+            list-style-type: circle;
+            margin-left: 10pt;
+            padding: 1pt;
+        }
+
+        .ask-ref {
+            color: #01BF63;
+            font-size: 7pt;
+            font-weight: 700;
+            text-align: left;
+            text-transform: none;
+        }
+
+        .title-block {
+            display: flex;
+            align-items: flex-end;
+            padding: 5pt 0;
+        }
+
+        .job-logo,
+        .school-logo {
+            height: 15pt;
+            display: block;
+            margin: 0 7.5pt 0 0;
+        }
+
+        .experience,
+        .formation {
+            margin: 15pt 0;
+        }
+
+        .experience-dates,
+        .formation-dates {
+            font-size: 7pt;
+        }
+
+        .experience-job-name,
+        .formation-diplome-name {
+            font-size: 10pt;
+            font-weight: bold;
+            padding: 2.5pt 0;
+        }
+
+        .experience-company {
+            font-size: 9pt;
+            font-style: italic;
+        }
+
+        .formation-company {
+            font-size: 7pt;
+            font-style: italic;
+        }
+
+        .experience-tasks,
+        .experience-label {
+            margin: 2.5pt 0;
+            line-height: 10pt;
+        }
+
+        .experience-tasks-item {
+            font-size: 8pt;
+        }
+
+        .heihgt-30 {
+            height: 15pt;
+        }
+
+        .experience-task-item-label {
+            line-height: 15pt;
+            vertical-align: top;
+        }
+
+        .experience-project-label {
+            font-style: italic;
+        }
+
+        .no-bullet {
+            list-style-type: none;
+        }
+
+        .access {
+            margin-left: 15pt;
+        }
+
+        .formation-dates {
+            font-weight: 700;
+        }
+
+}
