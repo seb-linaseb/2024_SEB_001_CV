@@ -170,13 +170,15 @@ img {
 
 .skills,
 .interests,
+.soft-skills,
 .references {
     text-transform: uppercase;
     margin: 12px;
     padding: 12px;
 }
 
-.interests-list {
+.interests-list,
+.soft-skills {
     font-size: 14px;
     text-transform: none;
 }
@@ -238,22 +240,26 @@ img {
     padding: 0 2px;
 }
 
-.interests-list {
+.interests-list,
+.soft-skills-list {
     padding: 0 10%;
     margin: auto;
 }
 
 .interest-tag,
+.soft-skills-tag,
 .experience-tasks-item {
     list-style-type: disc;
 }
 
-.interest-title {
+.interest-title,
+.soft-skills-title {
     font-weight: 700;
     padding: 5px;
 }
 
-.interest-item {
+.interest-item,
+.soft-skills-item {
     list-style-type: circle;
     margin-left: 20px;
     padding: 2px;
@@ -395,6 +401,15 @@ img {
     .interests,
     .references {
         margin: 0 50px;
+    }
+
+    .soft-skills {
+        margin: 0 25px 0 50px;
+    }
+
+    .soft-skills-list {
+        margin: 0 0 0 20px;
+        padding: 0;
     }
 
     .infos-title {
@@ -546,14 +561,15 @@ img {
         }
 
         .bio {
-            padding: 5pt;
+            display: none;
+            /* padding: 5pt; */
         }
 
         .bio p {
-            line-height: 1.5em;
-            text-align: justify;
-            padding: 5pt;
-            font-style: italic;
+            /* line-height: 1.5em; */
+            /* text-align: justify; */
+            /* padding: 5pt; */
+            /* font-style: italic; */
         }
 
         .main {
@@ -568,7 +584,7 @@ img {
         }
 
         .infos {
-            width: 37%;
+            width: 40%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -590,7 +606,7 @@ img {
         }
 
         .infos-title {
-            width: 50%;
+            width: 75%;
         }
 
         .skills,
@@ -601,11 +617,21 @@ img {
             padding: 0 6pt;
         }
 
+        .soft-skills {
+            text-transform: uppercase;
+            margin: 0 0pt 0 25pt;
+            padding: 0 0pt 0 6pt;
+        }
+
         .skills {
             padding-top: 12pt;
         }
 
         .interests {
+            padding: 12pt 6pt;
+        }
+
+        .soft-skills {
             padding-top: 0;
         }
 
@@ -613,7 +639,8 @@ img {
             padding: 12pt 6pt;
         }
 
-        .interests-list {
+        .interests-list,
+        .soft-skills-list {
             font-size: 8pt;
             text-transform: none;
         }
@@ -675,22 +702,26 @@ img {
             padding: 0 1pt;
         }
 
-        .interests-list {
+        .interests-list,
+        .soft-skills-list {
             padding: 0 10%;
             margin: auto;
         }
 
         .interest-tag,
+        .soft-skills-tag,
         .experience-tasks-item {
             list-style-type: disc;
         }
 
-        .interest-title {
+        .interest-title
+        .soft-skills-title {
             font-weight: 700;
             padding: 2.5pt;
         }
 
-        .interest-item {
+        .interest-item,
+        .soft-skills-item {
             list-style-type: circle;
             margin-left: 10pt;
             padding: 1pt;
