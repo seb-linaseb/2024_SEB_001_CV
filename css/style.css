@@ -179,6 +179,7 @@ img {
 .skills,
 .interests,
 .soft-skills,
+.certification,
 .references {
     text-transform: uppercase;
     margin: 12px;
@@ -214,15 +215,37 @@ img {
     padding: 0 10px 0 10px;
 }
 
+.certif-details {
+    background: white;
+    margin: 12px 50px;
+    padding: 0;
+}
+
 .dev-category {
     display: flex;
     justify-content: space-between;
     padding: 5px;
 }
 
-.dev-name {
+.certif-category {
+    display: flex;
+    justify-content: left;
+    padding: 5px;
+}
+
+.dev-name,
+.certif-company {
     font-size: 14px;
     font-weight: 700;
+}
+
+.certif-infos {
+    text-transform: none;
+    font-size: 14px;
+}
+
+.certif-name {
+    font-style: italic;
 }
 
 .progress {
@@ -426,6 +449,10 @@ img {
         margin: 0 50px;
     }
 
+    .certification {
+        margin: 0 0 0 50px;
+    }
+
     .soft-skills {
         margin: 0 25px 0 50px;
     }
@@ -441,6 +468,15 @@ img {
 
     .dev-details {
         margin: 30px -40px;
+    }
+
+    .certif-details {
+        margin: 12px 0;
+        padding: 0;
+    }
+
+    .certif-category {
+        justify-content: left;
     }
 
     .job-logo,
@@ -654,6 +690,10 @@ img {
             padding: 0 6pt;
         }
 
+        .certification {
+            margin: 0 0 0 25pt;
+        }
+
         .soft-skills {
             text-transform: uppercase;
             margin: 0 0pt 0 25pt;
@@ -665,15 +705,23 @@ img {
         }
 
         .interests {
-            padding: 12pt 6pt;
+            padding: 5pt 6pt;
         }
 
         .soft-skills {
-            padding-top: 0;
+            padding: 5pt 6pt;
+        }
+
+        .certification {
+            padding: 5pt 6pt;
+        }
+
+        .certif-infos {
+            font-size: 7pt;
         }
 
         .references {
-            padding: 12pt 6pt;
+            padding: 5pt 6pt;
         }
 
         .interests-list,
@@ -683,7 +731,7 @@ img {
         }
 
         .graphs {
-            margin: 12.5pt -12.5pt;
+            margin: 5pt -12.5pt;
             display: flex;
             justify-content: space-around;
             text-align: center;
@@ -701,8 +749,14 @@ img {
         .dev-details {
             background: white;
             border-radius: 12.5pt;
-            margin: 14pt -20pt;
+            margin: 5pt -20pt;
             padding: 0 5pt 0 5pt;
+        }
+
+        .certif-details {
+            background: white;
+            margin: 6pt 12pt 0 0;
+            padding: 0;
         }
 
         .dev-category {
@@ -711,7 +765,14 @@ img {
             padding: 2.5pt;
         }
 
-        .dev-name {
+        .certif-category {
+            display: flex;
+            justify-content: left;
+            /* padding: 2.5pt; */
+        }
+
+        .dev-name,
+        .certif-company {
             font-size: 7pt;
             font-weight: 700;
         }
@@ -751,10 +812,10 @@ img {
             list-style-type: disc;
         }
 
-        .interest-title
+        .interest-title,
         .soft-skills-title {
             font-weight: 700;
-            padding: 2.5pt;
+            padding: 2pt;
         }
 
         .interest-item,
